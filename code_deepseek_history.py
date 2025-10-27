@@ -43,6 +43,10 @@ if __name__ == '__main__':
 
         user_input = input('用户输入：')
 
+        if user_input.lower() == 'exit':
+            print('再见！')
+            break
+
         #添加对话内容
         messages.append({"role":"user","content":user_input})
 
